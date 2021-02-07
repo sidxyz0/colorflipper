@@ -1,0 +1,12 @@
+btn1.addEventListener('click',function(){
+    main_div.style.backgroundColor='red';
+});
+btn2.addEventListener('click',function(){
+    main_div.style.backgroundColor='white';
+});
+a1.addEventListener('click',function(){
+    window.open("colorflipper_basic_grey.html","_self")
+});
+a2.addEventListener('click',function(){
+    window.open("colorflipper_advanced_grey.html","_self")
+});

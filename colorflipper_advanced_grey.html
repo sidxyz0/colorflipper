@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<div class="navdiv" id="navdiv">
+    <nav class="nav" id="nav1">
+        <a class="a" id="a1">Simple</a>
+    </nav>
+    <nav class="nav" id="nav2">
+        <a class="a" id="a2">Advanced</a>
+    </nav>
+</div>
+
+<body class="body" id="body">
+    <div class="main_div" id="main_div">
+        <div class="title_div" id="title_div">Color Flipper</div>
+        <div class="btn_div" id="btn_div">
+            <button class="btn" id="btn1">CHANGE COLOR</button>
+            <button class="btn" id="btn2">RESET COLOR</button>
+        </div>
+    </div>
+</body>
+<!--css style tag to set element style
+    .class selects class; #id selects id; element selects element-->
+<style>
+    #navdiv {
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        box-shadow: 0 4px 8px rgb(184, 184, 184);
+    }
+
+    #a1 {
+        background-color: white;
+        font: caption;
+        font-size: 20px;
+        color: black;
+        padding: 8px;
+        margin: 10px;
+    }
+
+    #a2 {
+        background-color: rgb(184, 184, 184);
+        font: caption;
+        font-size: 20px;
+        color: black;
+        padding: 8px;
+        margin: 10px;
+    }
+
+    a:link {
+
+        text-decoration: none;
+    }
+
+    #a1:hover {
+        font-size: 22px;
+        transition: 0.1s;
+        background-color: rgb(184, 184, 184);
+        text-decoration: none;
+    }
+
+    .nav {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #main_div {
+        padding-top: 5px;
+        padding-bottom: 100%;
+    }
+
+    #title_div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font: caption;
+        font-size: 40px;
+        color: white;
+        background-color: black;
+        margin-left: 35%;
+        margin-right: 35%;
+        padding: 3%;
+        margin-bottom: 1%;
+        margin-top: 1%;
+        border-radius: 10px;
+    }
+
+    .body {
+
+        width: 99%;
+    }
+
+    .btn_div {
+        text-align: center;
+    }
+
+    .btn {
+        text-align: center;
+        font-size: 12px;
+        width: 110px;
+        height: 35px;
+        border: none;
+        background-color: rgb(184, 184, 184);
+        border-radius: 5px;
+        display: inline-block;
+    }
+</style>
+<script src="colorflipper_advanced.js"></script>
+
+</html>
